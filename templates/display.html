@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<head>
+    <script>
+        let data = {{data|tojson}};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'display.js') }}"></script>
+</head>
+
+
+<div id = "name", class="title"></div>
+<div id = "genra">
+    Genra:
+</div>
+<div class="space"></div>
+<div id = "release_date">
+    Release Date:
+</div>
+<div class="space"></div>
+<div id = "about">
+    About:
+</div>
+<div class="space"></div>
+<div id = "patch"></div>
+<div class="space"></div>
+<div id = "rating"></div>
+<div class="space"></div>
+<div id = "comments">
+    Comments:
+</div>
+
+
+
+
+
+{% endblock %}

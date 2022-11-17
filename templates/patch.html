@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<head>
+    <script>
+        let data = {{data|tojson}};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'patch.js') }}"></script>
+</head>
+
+<div id = "patch_notes"></div>
+
+{% endblock %}

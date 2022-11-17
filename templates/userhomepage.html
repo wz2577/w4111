@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<head>
+    <script>
+        let data = {{data|tojson}};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'userhomepage.js') }}"></script>
+</head>
+
+
+<div id = "name", class="title"></div>
+<div class="space"></div>
+<div id = "buy">
+    Game this person owns:
+</div>
+
+
+
+
+
+
+{% endblock %}

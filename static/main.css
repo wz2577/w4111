@@ -1,0 +1,25 @@
+.title{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.space{
+    padding-top: 20px;
+}
+
+.name{
+    font-size: small;
+}
+
+.content{
+    font-size: x-small;
+    font-weight: bold;
+}
+
+.date{
+    font-size: xx-small;
+}
+
+.score{
+    font-size: xx-small;
+}

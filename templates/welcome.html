@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<head>
+    <script>
+        let data = {{data|tojson}};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'welcome.js') }}"></script>
+</head>
+
+<div>
+    Recommended Games:
+</div>
+<div id = "content"></div>
+
+
+
+
+{% endblock %}
